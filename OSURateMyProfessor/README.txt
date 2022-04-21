@@ -22,4 +22,5 @@ STEPS:
 	7) Go to your browser and run localhost/(insert your folder name here).
 		- This will take you to the index.html page of your folder.
 	8) In this case, we will open localhost/osuratemyprofessor.
-	9) After these steps, you should be at the log in page of this project and you can begin going through the website.
+	9) At this step, you should be on the login page of the website.
+	10) Create a new user on the website and begin browsing the website at your will.
