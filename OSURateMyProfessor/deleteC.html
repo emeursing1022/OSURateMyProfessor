@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete course</title>
+</head>
+<body>
+
+<script>
+let confirmAction = confirm("Are you sure to delete this course?");
+if (confirmAction) {
+	window.location = "php/deleteC.php";
+	alert("Course successfully deleted.");
+} else {
+  alert("Course not deleted.");
+  window.location = "main.html";
+}
+</script>
+</body>
+</html>

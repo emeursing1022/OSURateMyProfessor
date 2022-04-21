@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add a new course</title>
+<link rel="stylesheet" href="css/add.css" type="text/css">
+</head>
+<body>
+	<form action="php/addC.php" method="post">
+		<div class="container">
+			<h1>Add a new course</h1>
+			<label><b>Course Name</b></label>
+			<input type="text" placeholder="Enter the full course name" name="name" required>
+			
+			<label><b>Department</b></label>
+			<input type="text" placeholder="Enter the department this course is under" name="college" required>
+			
+			<label><b>Course Number</b></label>
+			<input type="text" placeholder="(XX ####) Ex: CS 4433" name="number" required>
+
+			<label><b>Credit Hours</b></label>
+			<input type="text" placeholder="Enter the number of credit hours" name="hours" required>
+
+			<button type="submit" name="submit">Add new course</button>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<a href="main.html"><button type="button" class="cancelbtn">Return</button></a>
+		</div>
+	</form>
+</body>

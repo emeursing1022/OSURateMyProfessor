@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add a new professor</title>
+<link rel="stylesheet" href="css/add.css" type="text/css">
+</head>
+<body>
+	<form action="php/addP.php" method="post">
+		<div class="container">
+			<h1>Add a new professor</h1>
+			<label><b>Professor's name</b></label>
+			<input type="text" placeholder="Enter the professor's name" name="name" required>
+
+			<label><b>Your satisfaction rating for the profesor</b></label>
+			<input type="text" placeholder="Enter your satisfaction rating" name="satisfaction" required>
+			
+			<label><b>Your difficulty rating for the professor</b></label>
+			<input type="text" placeholder="Enter your difficulty rating" name="difficulty" required>
+
+			<button type="submit" name="submit">Add new professor</button>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<a href="main.html"><button type="button" class="cancelbtn">Return</button></a>
+		</div>
+	</form>
+</body>

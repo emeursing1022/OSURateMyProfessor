@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add a comment</title>
+<link rel="stylesheet" href="css/add.css" type="text/css">
+</head>
+<body>
+	<form action="php/comment.php" method="post">
+		<div class="container">
+			<h1>Add a comment</h1>
+			<label><b>Professor Name</b></label>
+			<input type="text" placeholder="Enter the full professor name" name="name" required>
+
+			<label><b>Comment</b></label>
+			<input type="text" placeholder="Enter your comment" name="comment" required>
+
+			<button type="submit" name="submit">Add new comment</button>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<a href="main.html"><button type="button" class="cancelbtn">Return</button></a>
+		</div>
+	</form>
+</body>

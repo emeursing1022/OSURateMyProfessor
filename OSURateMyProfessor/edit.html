@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit user information</title>
+<link rel="stylesheet" href="css/add.css" type="text/css">
+</head>
+<body>
+	<form action="php/edit.php" method="post">
+		<div class="container">
+			<h2>Please enter the information you want to change:</h2>
+			<label for="user"><b>Username</b></label>
+			<input type="text" placeholder="Change username" name="user">
+
+			<label for="pass"><b>Password</b></label>
+			<input type="password" placeholder="Change password" name="pass">
+			
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Change email address" name="email">
+
+			<label for="name"><b>Name</b></label>
+			<input type="text" placeholder="Change name" name="name">
+			
+			<label for="year"><b>Year</b></label>
+			<input type="text" placeholder="Change your current year (1,2,3...)" name="year">
+			
+			<label for="major"><b>Major</b></label>
+			<input type="text" placeholder="Change your major" name="major">
+
+			<button type="submit" name="edit">Edit information</button>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<a href="main.html"><button type="button" class="cancelbtn">Return</button></a>
+		</div>
+	</form>
+</body>

@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+session_start();
+// log in variables for database
+$host = "localhost";
+$username = "masterUser";
+$password = "password";
+$dbname = "osu_ratemyprofessor";
+$conn = new mysqli($host, $username, $password, $dbname);
+
+$query = 'SELECT CourseName FROM course ORDER BY CourseName ASC';
+$result = mysqli_query($conn, $query);
+$array = array();
+while ($row = mysqli_fetch_assoc($result)) {
+	$_SESSION = $_SESSION + $row;
+}
+foreach ($result as $row) {
+  echo implode(",",$row);
+}
+?>
+
+</body>
+</html>

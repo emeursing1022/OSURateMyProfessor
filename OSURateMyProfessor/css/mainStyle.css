@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+.title-bar {
+  background-color: #48A6B8;
+  font-style: italic;
+  margin-bottom: 3%;
+  color: #fff;
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 180%;
+  flex:1 0 auto;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=submit] {
+	width:40%;
+	padding: 14px 20px;
+	background: #FE5C00;
+	border: 1px solid black;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+input[type=submit]:hover{
+	opacity:0.7;
+}
+
+.logout{
+	width:100%;
+}
+
+.button{
+	background:#FE5C00;
+	border-radius: 5px;
+	border: 1px solid black;
+	float:right;
+	width: 10%;
+}
+
+.button:hover {
+	opacity: 0.7;
+}
+
+#myInput {
+  background-image: url("searchicon.png");
+  background-size: 8.5%;
+  background-position: 1px 2px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #ddd;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.searchValue {
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+  height: 20%;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn-group{
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

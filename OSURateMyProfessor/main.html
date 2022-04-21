@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="css/mainStyle.css" type="text/css">
+</head>
+<body>
+<a href="index.html"><button class="button" onclick="logout()">Log out</button></a>
+<h2 align="center">Welcome to OSU's Rate My Professor!</h2>
+<div class="row">
+	<!-- Professor column -->
+	<div align="center" class="column" style="background-color:#aaa;">
+		<form action="php/searchP.php" method="post">
+			<h2>Professors</h2>
+			<label for="pass"><b>Enter a professor's full name to search:</b></label>
+			<br>
+			<div class="search">
+				<input type="text" class="searchValue" placeholder="Enter professor name" name="professor">
+			</div>
+			<div class="btn-group">
+				<input type="submit" name="search" value="Search Professor"></input>
+			</div>
+		</form>
+		<a href="addP.html"><input type="submit" name="addP" value="Add Professor"></input></a>
+	</div>
+	<!-- Department column -->
+	<div align="center" class="column" style="background-color:#bbb;">
+		<form action="php/searchD.php" method="post">
+			<h2>Departments</h2>
+
+			<label for="pass"><b>Enter a department name to search:</b></label>
+			<br>
+			<div class="search">
+				<input type="text" class="searchValue" placeholder="Enter department name" name="department">
+			</div>
+			<div class="btn-group">
+				<input type="submit" name="search" value="Search Department"></input>
+			</div>
+		</form>
+		<a href="addD.html"><input type="submit" name="addD" value="Add Department"></input></a>
+	</div>
+	<!-- Course column -->
+	<div align="center" class="column" style="background-color:#aaa;">
+		<form action="php/searchC.php" method="post">
+			<h2>Courses</h2>
+			<label for="pass"><b>Enter a course name to search:</b></label>
+			<br>
+			<div class="search">
+				<input type="text" class="searchValue" placeholder="Enter course name" name="course">
+			</div>
+			<div class="btn-group">
+				<input type="submit" name="search" value="Search Course"></input>
+			</div>
+		</form>
+		<a href="addC.html"><input type="submit" name="addC" value="Add Course"></input></a>
+	</div>
+	<!-- User column -->
+	<div align="center" class="column" style="background-color:#bbb;">
+		<form action="php/confirm.php" method="post">
+			<h2>User Settings</h2>
+			<label for="pass"><b>Enter email to check account information:</b></label>
+			<br>
+			<div class="search">
+				<input type="text" class="searchValue" placeholder="Enter email" name="check">
+			</div>
+			<div class="btn-group">
+				<input type="submit" name="edit" value="Edit account info"></input>
+			</div>
+		</form>
+		<a href="comment.html"><input type="submit" name="add" value="Add professor comment"></input></a>
+	</div>
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+function logout(){
+	alert("Successfully logged out.");
+}
+</script>
+</body>
+</html>
