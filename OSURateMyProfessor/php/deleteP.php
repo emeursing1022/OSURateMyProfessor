@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 }
 
 $professorDelete = $_SESSION['deleteP'];
-$query = "DELETE FROM professor WHERE professor = '$professorDelete'";
+$query = "DELETE FROM professor WHERE ProfName = '$professorDelete'";
 $result = mysqli_query($conn, $query);
 ?>
 <script type = "text/javascript">
