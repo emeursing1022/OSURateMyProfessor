@@ -1,13 +1,6 @@
 CREATE DATABASE  IF NOT EXISTS osu_ratemyprofessor;
 USE osu_ratemyprofessor;
 
-drop table comments;
-drop table courseProf;
-drop table course;
-drop table department;
-drop table student;
-drop table professor;
-
 
 CREATE TABLE professor (
   ProfName varchar(50) NOT NULL,
