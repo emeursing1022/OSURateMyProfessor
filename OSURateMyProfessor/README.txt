@@ -2,7 +2,7 @@ Hello! This is the lead programmer, Emory Meursing and here is how to run this w
 PREREQUISITES:
 	1) Must have xampp 7.+ installed. (I use 7.4.27 for Windows 64x bit systems)
 	2) Internet connection
-	3) Copy of OSURateMyProfessor file
+	3) Copy of OSURateMyProfessor folder
 	4) Copy of rateMyProfessor SQL text file
 	
 STEPS:
