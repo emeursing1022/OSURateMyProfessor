@@ -14,14 +14,13 @@ if ($conn->connect_error) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = 'SELECT * FROM professor';
-$result = mysqli_query($conn, $query);
 $professorDelete = $_SESSION['deleteP'];
-while ($row = mysqli_fetch_assoc($result)){
-	if ($row['ProfName'] == $professorDelete){
-		$query = "DELETE FROM professor WHERE ProfName = '$professorDelete'";
-		$result = mysqli_query($conn, $query);
-	}
-}
+$query = "DELETE FROM professor WHERE professor = '$professorDelete'";
+$result = mysqli_query($conn, $query);
+?>
+<script type = "text/javascript">
+window.location = "../main.html";
+</script>
+<?php
 
 ?>

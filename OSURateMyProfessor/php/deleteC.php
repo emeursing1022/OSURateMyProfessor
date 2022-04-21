@@ -15,13 +15,12 @@ if ($conn->connect_error) {
 }
 
 $courseDelete = $_SESSION['deleteC'];
-$query = 'SELECT * FROM course';
+$query = "DELETE FROM course WHERE CourseName = '$courseDelete'";
 $result = mysqli_query($conn, $query);
-while ($row = mysqli_fetch_assoc($result)){
-	if ($row['courseNum'] == $courseDelete){
-		$query = "DELETE FROM course WHERE courseNum = '$courseDelete'";
-		$result = mysqli_query($conn, $query);
-	}
-}
+?>
+<script type = "text/javascript">
+window.location = "../main.html";
+</script>
+<?php
 
 ?>
